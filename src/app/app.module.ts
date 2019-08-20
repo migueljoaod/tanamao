@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ItemListModule } from './components/item-list/item-list.module';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,11 @@ import { ItemListComponent } from './components/item-list/item-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ItemListModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
