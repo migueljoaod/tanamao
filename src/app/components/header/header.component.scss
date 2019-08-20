@@ -1,6 +1,25 @@
 .navbar {
+    background-image: linear-gradient(to right, #56CCF2,#2F80ED);
     width: 100%;
     & .navbar-content {
         padding: 0 10%;
+        & .navbar-brand {
+            font-family: 'Gochi Hand', cursive;
+            color: white;
+            font-size: 30px;
+        }
+    }
+
+    & .navbar-right {
+        & .icon-group {
+            color: white;
+            font-size: 25px;
+            & .icon {
+                cursor: pointer;
+                & :hover {
+
+                }
+            }
+        }        
     }
 }

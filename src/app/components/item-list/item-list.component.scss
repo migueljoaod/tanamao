@@ -1,6 +1,20 @@
 .item-list {
-    min-width: 41%;
-    display: table;
-    float: none;
-    margin: 0 auto;
+    min-width: 60%;
+    float: left;
+    margin: 0 10%;
+    & .input-search {
+        padding: 50px 0;
+        & .input-group {
+            & .form-control {
+                border-radius: 30px;
+                ::placeholder {
+                    padding-left: 30px;
+                }
+            }
+            & .btn {
+                border-radius: 30px;
+                margin: 0 10px;
+            }
+        }
+    }
 }
