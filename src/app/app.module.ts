@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ItemListComponent } from './components/item-list/item-list.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ItemListModule } from './components/item-list/item-list.module';
+import { UserAdsComponent } from './user-ads/user-ads.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ItemListModule } from './components/item-list/item-list.module';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ItemListComponent
+    ItemListComponent,
+    UserAdsComponent
   ],
   imports: [
     BrowserModule,
